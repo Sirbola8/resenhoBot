@@ -95,19 +95,10 @@ python bot.py
 Você deve ver no terminal:
 
 ```
-✅ Bot online: ResenhaAlert#1234
+✅ Bot online: ResenhoBot#1234
 ⚽ Monitorando rivais: Flamengo, Palmeiras
 ⏱️  Verificando a cada 60s
 ```
-
----
-
-## Comandos disponíveis no Discord
-
-| Comando | O que faz |
-|---------|-----------|
-| `!status` | Mostra jogos ao vivo dos rivais agora |
-| `!rivais` | Lista os times que estão sendo monitorados |
 
 ---
 
@@ -123,19 +114,7 @@ Rival estava PERDENDO/EMPATANDO → passa a GANHAR
 
 O bot guarda o estado de cada jogo em memória. Se o bot reiniciar durante um jogo, ele começa a monitorar do zero (sem histórico de alertas anteriores).
 
----
 
-## Limite da API gratuita
-
-O plano free tem **100 requisições/dia**. Com verificação a cada 60s rodando 24h = ~1440 req/dia — estoura o limite.
-
-**Soluções:**
-
-- Rode o bot **só nos horários de jogo** (ex: das 15h às 23h) → ~480 req
-- Aumente o intervalo para 120s em `CHECK_INTERVAL = 120` → ~720 req/dia
-- Faça upgrade para o plano básico (~$9/mês) para rodar 24h sem preocupação
-
----
 
 ## 🛠️ Estrutura do Projeto
 
