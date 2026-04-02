@@ -1,6 +1,3 @@
-Aqui está o conteúdo formatado em **Markdown** puro para você copiar e colar no seu arquivo `README.md`:
-
-````markdown
 # ⚽ ResenhoBot — Python
 
 ### Install and Run
