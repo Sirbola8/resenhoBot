@@ -51,6 +51,14 @@ def obter_jogos_brasileirao():
                 else:
                     placar_str = "x"
 
+                ao_vivo = driver.find_element(By.CLASS_NAME, "jogo__transmissao--broadcast blink-animation")
+
+                print(f"ao_vivo: {ao_vivo.text}")
+
+                if ao_vivo and (mandante in ao_vivo.text or visitante in ao_vivo.text):
+                    print(f"Jogo AO VIVO detectado: {mandante} x {visitante}")
+                    status_info = "ao vivo"
+
                 lista_resultados.append({
                     "mandante": mandante,
                     "visitante": visitante,

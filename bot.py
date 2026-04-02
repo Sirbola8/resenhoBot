@@ -3,6 +3,7 @@ from discord.ext import commands, tasks
 import os
 from dotenv import load_dotenv
 from tasks.task_update_data import atualizar_arquivo
+from functions.task_monitor_resenha import verificar_resenha
 import json
 
 load_dotenv()
@@ -18,13 +19,10 @@ FOOTBALL_API_KEY   = os.getenv("FOOTBALL_API_KEY", "")
 RIVAL_TEAMS = [
     "Palmeiras",
     "vasco da gama",
+    "Santos",
+    "Atlético-MG",
     # Adicione mais aqui
 ]
- 
-# IDs de ligas monitoradas (API-Football)
-# 71 = Brasileirão A | 72 = Série B | 73 = Copa do Brasil
-# 2 = Champions | 13 = Libertadores | 11 = Sul-Americana
-LEAGUE_IDS = [71, 72, 73]
  
 # Intervalo de verificação em segundos
 CHECK_INTERVAL = 60
@@ -55,10 +53,15 @@ async def ajuda(ctx):
     await ctx.send(help_text)
 
 
-@tasks.loop(seconds=120)
+@tasks.loop(seconds=CHECK_INTERVAL)
 async def tasks():
     atualizar_arquivo()
     print("Estou funcionando!")
+    await verificar_resenha(
+        bot=bot,
+        alert_channel_id=ALERT_CHANNEL_ID,
+        rival_teams=RIVAL_TEAMS,
+    )
 
 @bot.command()
 async def jogos(ctx):

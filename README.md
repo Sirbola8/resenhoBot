@@ -104,17 +104,17 @@ The bot keeps the state of each match in memory. If the bot restarts during a ga
 
 ## Project Contributors
 
-\<table style="width:100%"\>
-\<tr\>
-\<td align="center"\>
-\<a href="https://github.com/Gl1tch42"\>
-\<img src="https://github.com/Gl1tch42.png" width="100px;" alt="Jean Michel"/\>\<br /\>
-\<sub\>\<b\>Jean Michel\</b\>\</sub\>
-\</a\>\<br /\>
-🚀 Lead Developer
-\</td\>
-\</tr\>
-\</table\>
+<table style="width:100%"\>
+    <tr\>
+        <td align="center"\>
+        <a href="https://github.com/Gl1tch42"\>
+            <img src="https://github.com/Gl1tch42.png" width="100px;" alt="Jean Michel">\<br>
+            <sub>\<b>Jean Michel\</b>\</sub>
+        </a>\<br>
+        🚀 Lead Developer
+        </td>
+    </tr\>
+</table\>
 
 -----
 
