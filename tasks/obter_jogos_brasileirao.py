@@ -60,6 +60,9 @@ def obter_jogos_brasileirao():
             except Exception as e:
                 continue
     finally:
-        driver.quit()
+        if driver:
+            print("Cleaning up Chrome instance...")
+            driver.close() # Fecha a aba
+            driver.quit()  # Fecha o processo do browser e do chromedriver
         
     return lista_resultados
