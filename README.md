@@ -156,3 +156,36 @@ O plano free tem **100 requisições/dia**. Com verificação a cada 60s rodando
 
 
 ## Contribuites do projeto
+
+<table style="width:100%">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Gl1tch42">
+        <img src="https://github.com/Gl1tch42.png" width="100px;" alt="Jean Michel"/><br />
+        <sub><b>Jean Michel</b></sub>
+      </a><br />
+      🚀 Lead Developer
+    </td>
+    <!-- <td align="center">
+      <a href="https://github.com/usuario-parceiro">
+        <img src="https://github.com/usuario-parceiro.png" width="100px;" alt="Nome do Parceiro"/><br />
+        <sub><b>Nome do Parceiro</b></sub>
+      </a><br />
+      🎨 UI/UX & Regras de Negócio
+    </td> -->
+  </tr>
+</table>
+
+---
+
+### 💡 Como contribuir
+
+Sinta-se à vontade para sugerir melhorias ou reportar bugs! Para contribuir:
+
+1.  Faça um **Fork** do projeto.
+2.  Crie uma **Branch** para sua modificação (`git checkout -b feature/nova-funcionalidade`).
+3.  Faça o **Commit** das suas alterações (`git commit -m 'Adicionando nova função de alerta'`).
+4.  Faça o **Push** da sua branch (`git push origin feature/nova-funcionalidade`).
+5.  Abra um **Pull Request**.
+
+> **Nota:** Se você estiver desenvolvendo este bot em conjunto para o seu servidor pessoal, sinta-se à vontade para personalizar os cargos de contribuição conforme a participação de cada um!
