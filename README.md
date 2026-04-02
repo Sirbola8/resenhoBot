@@ -40,18 +40,7 @@ cp .env.example .env
       - Permissions: `Send Messages`, `Embed Links`, `Mention Everyone`
 7.  Access the generated URL in your browser to add the bot to your server
 
-### 2\. Get the Football API Key
-
-1.  Create an account at [dashboard.api-football.com](https://dashboard.api-football.com/register)
-2.  Copy your **API Key** → this is your `FOOTBALL_API_KEY`
-
-### 3\. Get the Channel ID
-
-1.  In Discord: **Settings → Advanced → enable Developer Mode**
-2.  Right-click the alerts channel → **Copy ID**
-3.  This is your `ALERT_CHANNEL_ID`
-
-### 4\. Configure Rival Teams
+### 2\. Configure Rival Teams
 
 Open `bot.py` and edit the `RIVAL_TEAMS` list:
 
@@ -63,28 +52,6 @@ RIVAL_TEAMS = [
     # Add the teams you dislike here
 ]
 ```
-
-> Names should be similar to those appearing in the API. The search uses partial matching, so `"Flamengo"` will match `"Flamengo RJ"` or `"CR Flamengo"`.
-
-### 5\. Configure Monitored Leagues (optional)
-
-```python
-LEAGUE_IDS = [71, 72, 73]  # Brasileirão A, B, and Copa do Brasil
-```
-
-| League | ID |
-|------|-----|
-| Brasileirão Série A | 71 |
-| Brasileirão Série B | 72 |
-| Copa do Brasil | 73 |
-| Libertadores | 13 |
-| Sul-Americana | 11 |
-| Champions League | 2 |
-| Europa League | 3 |
-| Premier League | 39 |
-| La Liga | 140 |
-
------
 
 ## Running the Bot
 
