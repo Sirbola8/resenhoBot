@@ -35,9 +35,8 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
 async def on_ready():
-    tasks.start()
-    if not monitoramento_jogos.is_running():
-        monitoramento_jogos.start()
+    if not tasks.is_running():
+        tasks.start()
     print(f'Sucesso! Bot conectado como: {bot.user.name}')
 
 @bot.command()
@@ -54,25 +53,6 @@ async def ajuda(ctx):
         "Eu monitoro os jogos ao vivo dos times que você não gosta e aviso quando eles estão sofrendo! Fique ligado!"
     )
     await ctx.send(help_text)
-
-
-@tasks.loop(seconds=CHECK_INTERVAL)
-async def tasks():
-    print("Estou funcionando!")
-    await verificar_resenha(
-        bot=bot,
-        alert_channel_id=ALERT_CHANNEL_ID,
-        rival_teams=RIVAL_TEAMS,
-    )
-
-@tasks.loop(seconds=120)
-async def monitoramento_jogos():
-    print("🔄 Iniciando atualização de dados em segundo plano...")
-    # Isso executa a função síncrona sem travar o loop do Discord
-    loop = asyncio.get_event_loop()
-    await loop.run_in_executor(None, atualizar_arquivo)
-    print("✅ Estou funcionando e dados atualizados!")
-
 
 @bot.command()
 async def jogos(ctx):
@@ -101,6 +81,17 @@ async def jogos(ctx):
         mensagem += linha + "\n\n"
 
     await ctx.send(mensagem)
+
+@tasks.loop(seconds=CHECK_INTERVAL)
+async def tasks():
+    loop = asyncio.get_event_loop()
+    await loop.run_in_executor(None, atualizar_arquivo)
+    await verificar_resenha(
+        bot=bot,
+        alert_channel_id=ALERT_CHANNEL_ID,
+        rival_teams=RIVAL_TEAMS,
+    )
+
 
 # Substitua pelo Token que você pegou no Developer Portal
 bot.run(DISCORD_TOKEN)

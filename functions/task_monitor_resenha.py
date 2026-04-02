@@ -80,7 +80,8 @@ async def verificar_resenha(bot: discord.ext.commands.Bot, alert_channel_id: int
     }
     """
     global _estado_anterior
- 
+
+    print("[Resenha] Verificando jogos para possíveis resenhas...")
     # Lê o arquivo
     try:
         if not os.path.exists(DATA_PATH):
