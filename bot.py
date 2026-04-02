@@ -1,6 +1,5 @@
 import discord
-from discord.ext import commands
-from discord.ext import tasks
+from discord.ext import commands, tasks
 import os
 import asyncio
 import aiohttp
@@ -11,9 +10,9 @@ load_dotenv()
 # ============================================================
 # CONFIGURAÇÕES
 # ============================================================
-DISCORD_TOKEN      = os.getenv("DISCORD_TOKEN")
+DISCORD_TOKEN      = os.getenv("DISCORD_TOKEN", "")
 ALERT_CHANNEL_ID   = int(os.getenv("ALERT_CHANNEL_ID", "0"))
-FOOTBALL_API_KEY   = os.getenv("FOOTBALL_API_KEY")
+FOOTBALL_API_KEY   = os.getenv("FOOTBALL_API_KEY", "")
  
 # Times que você NÃO GOSTA — o bot avisa quando estão sofrendo
 RIVAL_TEAMS = [
@@ -37,11 +36,17 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
 async def on_ready():
+    printer.start()
     print(f'Sucesso! Bot conectado como: {bot.user.name}')
 
 @bot.command()
 async def salve(ctx):
     await ctx.send(f'Salve, {ctx.author.mention}! Tudo tranquilo?')
+
+@tasks.loop(seconds=120)
+async def printer():
+    print("Estou funcionando!")
+
 
 # Substitua pelo Token que você pegou no Developer Portal
 bot.run(DISCORD_TOKEN)
