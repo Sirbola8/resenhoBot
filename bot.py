@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from tasks.task_update_data import atualizar_arquivo
 from functions.task_monitor_resenha import verificar_resenha
 import json
+import asyncio
 
 load_dotenv()
  
@@ -35,6 +36,8 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     tasks.start()
+    if not monitoramento_jogos.is_running():
+        monitoramento_jogos.start()
     print(f'Sucesso! Bot conectado como: {bot.user.name}')
 
 @bot.command()
@@ -55,13 +58,21 @@ async def ajuda(ctx):
 
 @tasks.loop(seconds=CHECK_INTERVAL)
 async def tasks():
-    atualizar_arquivo()
     print("Estou funcionando!")
     await verificar_resenha(
         bot=bot,
         alert_channel_id=ALERT_CHANNEL_ID,
         rival_teams=RIVAL_TEAMS,
     )
+
+@tasks.loop(seconds=120)
+async def monitoramento_jogos():
+    print("🔄 Iniciando atualização de dados em segundo plano...")
+    # Isso executa a função síncrona sem travar o loop do Discord
+    loop = asyncio.get_event_loop()
+    await loop.run_in_executor(None, atualizar_arquivo)
+    print("✅ Estou funcionando e dados atualizados!")
+
 
 @bot.command()
 async def jogos(ctx):
