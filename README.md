@@ -57,7 +57,7 @@ Abra o `bot.py` e edite a lista `RIVAL_TEAMS`:
 
 ```python
 RIVAL_TEAMS = [
-    "Flamengo",
+    "Vasco",
     "Palmeiras",
     "São Paulo",
     # Adicione os times que você não gosta

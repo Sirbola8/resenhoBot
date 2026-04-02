@@ -17,8 +17,8 @@ FOOTBALL_API_KEY   = os.getenv("FOOTBALL_API_KEY")
  
 # Times que você NÃO GOSTA — o bot avisa quando estão sofrendo
 RIVAL_TEAMS = [
-    "Flamengo",
     "Palmeiras",
+    "vasco da gama",
     # Adicione mais aqui
 ]
  
