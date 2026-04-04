@@ -1,72 +1,72 @@
 [
     {
-        "mandante": "Botafogo",
-        "visitante": "Mirassol",
-        "placar": "3 x 2",
-        "status": "Nilton Santos (Engenhão) — 01/04 — Ontem — 19:30",
-        "tipo_status": "ENCERRADO"
-    },
-    {
-        "mandante": "Internacional",
-        "visitante": "São Paulo",
-        "placar": "1 x 1",
-        "status": "Beira-Rio — 01/04 — Ontem — 19:30",
-        "tipo_status": "ENCERRADO"
-    },
-    {
-        "mandante": "Cruzeiro",
-        "visitante": "Vitória",
-        "placar": "3 x 0",
-        "status": "Mineirão — 01/04 — Ontem — 20:00",
-        "tipo_status": "ENCERRADO"
-    },
-    {
-        "mandante": "Bahia",
-        "visitante": "Athletico-PR",
-        "placar": "3 x 0",
-        "status": "Casa de Apostas Arena Fonte Nova — 01/04 — Ontem — 20:00",
-        "tipo_status": "ENCERRADO"
+        "mandante": "São Paulo",
+        "visitante": "Cruzeiro",
+        "placar": "x",
+        "status": "Morumbis — Hoje — 18:30",
+        "tipo_status": "FUTURO"
     },
     {
         "mandante": "Coritiba",
-        "visitante": "Vasco",
-        "placar": "1 x 1",
-        "status": "Couto Pereira — 01/04 — Ontem — 20:30",
-        "tipo_status": "ENCERRADO"
+        "visitante": "Fluminense",
+        "placar": "x",
+        "status": "Couto Pereira — Hoje — 20:30",
+        "tipo_status": "FUTURO"
     },
     {
-        "mandante": "Fluminense",
-        "visitante": "Corinthians",
-        "placar": "3 x 1",
-        "status": "Maracanã — 01/04 — Ontem — 21:30",
-        "tipo_status": "ENCERRADO"
-    },
-    {
-        "mandante": "Santos",
-        "visitante": "Remo",
-        "placar": "2 x 0",
-        "status": "Vila Belmiro — Hoje — 19:00",
-        "tipo_status": "ENCERRADO"
+        "mandante": "Vasco",
+        "visitante": "Botafogo",
+        "placar": "x",
+        "status": "São Januário — Hoje — 21:00",
+        "tipo_status": "FUTURO"
     },
     {
         "mandante": "Chapecoense",
-        "visitante": "Atlético-MG",
-        "placar": "0 x 4",
-        "status": "Arena Condá — Hoje — 19:00",
-        "tipo_status": "ENCERRADO"
+        "visitante": "Vitória",
+        "placar": "x",
+        "status": "Arena Condá — 05/04 — Amanhã — 16:00",
+        "tipo_status": "FUTURO"
     },
     {
-        "mandante": "Palmeiras",
-        "visitante": "Grêmio",
-        "placar": "2 x 1",
-        "status": "Arena Barueri — Hoje — 21:30",
-        "tipo_status": "AO_VIVO"
+        "mandante": "Flamengo",
+        "visitante": "Santos",
+        "placar": "x",
+        "status": "Maracanã — 05/04 — Amanhã — 17:30",
+        "tipo_status": "FUTURO"
     },
     {
-        "mandante": "Bragantino",
-        "visitante": "Flamengo",
-        "placar": "4 x 0",
-        "status": "Cícero de Souza Marques — Hoje — 21:30",
-        "tipo_status": "AO_VIVO"
+        "mandante": "Atlético-MG",
+        "visitante": "Athletico-PR",
+        "placar": "x",
+        "status": "Arena MRV — 05/04 — Amanhã — 17:30",
+        "tipo_status": "FUTURO"
+    },
+    {
+        "mandante": "Corinthians",
+        "visitante": "Internacional",
+        "placar": "x",
+        "status": "Neo Química Arena — 05/04 — Amanhã — 19:30",
+        "tipo_status": "FUTURO"
+    },
+    {
+        "mandante": "Bahia",
+        "visitante": "Palmeiras",
+        "placar": "x",
+        "status": "Casa de Apostas Arena Fonte Nova — 05/04 — Amanhã — 19:30",
+        "tipo_status": "FUTURO"
+    },
+    {
+        "mandante": "Mirassol",
+        "visitante": "Bragantino",
+        "placar": "x",
+        "status": "Maião — 05/04 — Amanhã — 20:00",
+        "tipo_status": "FUTURO"
+    },
+    {
+        "mandante": "Grêmio",
+        "visitante": "Remo",
+        "placar": "x",
+        "status": "Arena do Grêmio — 05/04 — Amanhã — 20:30",
+        "tipo_status": "FUTURO"
     }
 ]
