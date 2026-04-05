@@ -2,71 +2,71 @@
     {
         "mandante": "São Paulo",
         "visitante": "Cruzeiro",
-        "placar": "2 x 1",
-        "status": "Morumbis — Hoje — 18:30",
-        "tipo_status": "AO_VIVO"
+        "placar": "4 x 1",
+        "status": "Morumbis — 04/04 — Ontem — 18:30",
+        "tipo_status": "ENCERRADO"
     },
     {
         "mandante": "Coritiba",
         "visitante": "Fluminense",
-        "placar": "x",
-        "status": "Couto Pereira — Hoje — 20:30",
-        "tipo_status": "FUTURO"
+        "placar": "1 x 1",
+        "status": "Couto Pereira — 04/04 — Ontem — 20:30",
+        "tipo_status": "ENCERRADO"
     },
     {
         "mandante": "Vasco",
         "visitante": "Botafogo",
-        "placar": "x",
-        "status": "São Januário — Hoje — 21:00",
-        "tipo_status": "FUTURO"
+        "placar": "1 x 2",
+        "status": "São Januário — 04/04 — Ontem — 21:00",
+        "tipo_status": "ENCERRADO"
     },
     {
         "mandante": "Chapecoense",
         "visitante": "Vitória",
-        "placar": "x",
-        "status": "Arena Condá — 05/04 — Amanhã — 16:00",
-        "tipo_status": "FUTURO"
+        "placar": "0 x 0",
+        "status": "Arena Condá — Hoje — 16:00",
+        "tipo_status": "AO_VIVO"
     },
     {
         "mandante": "Flamengo",
         "visitante": "Santos",
         "placar": "x",
-        "status": "Maracanã — 05/04 — Amanhã — 17:30",
+        "status": "Maracanã — Hoje — 17:30",
         "tipo_status": "FUTURO"
     },
     {
         "mandante": "Atlético-MG",
         "visitante": "Athletico-PR",
         "placar": "x",
-        "status": "Arena MRV — 05/04 — Amanhã — 17:30",
+        "status": "Arena MRV — Hoje — 17:30",
         "tipo_status": "FUTURO"
     },
     {
         "mandante": "Corinthians",
         "visitante": "Internacional",
         "placar": "x",
-        "status": "Neo Química Arena — 05/04 — Amanhã — 19:30",
+        "status": "Neo Química Arena — Hoje — 19:30",
         "tipo_status": "FUTURO"
     },
     {
         "mandante": "Bahia",
         "visitante": "Palmeiras",
         "placar": "x",
-        "status": "Casa de Apostas Arena Fonte Nova — 05/04 — Amanhã — 19:30",
+        "status": "Casa de Apostas Arena Fonte Nova — Hoje — 19:30",
         "tipo_status": "FUTURO"
     },
     {
         "mandante": "Mirassol",
         "visitante": "Bragantino",
         "placar": "x",
-        "status": "Maião — 05/04 — Amanhã — 20:00",
+        "status": "Maião — Hoje — 20:00",
         "tipo_status": "FUTURO"
     },
     {
         "mandante": "Grêmio",
         "visitante": "Remo",
         "placar": "x",
-        "status": "Arena do Grêmio — 05/04 — Amanhã — 20:30",
+        "status": "Arena do Grêmio — Hoje — 20:30",
         "tipo_status": "FUTURO"
     }
 ]
